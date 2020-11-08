@@ -1,0 +1,14 @@
+#h1
+{
+    background-color: green;
+}
+
+#table
+{
+    border-collapse: collapse;
+}
+
+td
+{
+    border: 1px solid black;
+}
