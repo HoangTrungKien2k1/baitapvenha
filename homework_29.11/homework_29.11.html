@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center; font-size: 50px; font-family: Futura;">
+    <p>Click vào 'Buttom' để biết thêm thông tin chi tiết</p>
+
+    <button onclick="myFunction()" style="font-size: 40px; color: brown;">Buttom</button>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        function myFunction() {
+            let Number = prompt("Bạn hãy nhập vào một số để mở trang web mới:", 1);
+            switch (Number) {
+                case "1": window.open("https://quantrimang.com"); break;
+                case "2": window.open("https://download.com.vn"); break;
+                case "3": window.open("https://vndoc.com"); break;
+                default: window.open("https://meta.vn");
+            }
+            if (Number != null) {
+                document.getElementById("demo").innerHTML =
+                    "Trò này vui không? :))";
+            }
+            if (Number != null) {
+                document.getElementById("demo1").innerHTML =
+                    "Tiếp tục click vào 'Buttom' để khám phá tiếp nhé ^^";
+            }
+        }
+    </script>
+</body>
+
+</html>
