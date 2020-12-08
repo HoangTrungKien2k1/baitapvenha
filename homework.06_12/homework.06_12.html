@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework.06_12</title>
+</head>
+
+<body>
+    <div style="text-align: center; font-size: 45px;">
+        <div>
+            <div>
+                <div>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Start Date</p>
+                    <input type="date" id="startDate">
+                    <p>End Date</p>
+                    <input type="date" id="endDate">
+                    <p>Note</p>
+                    <input type="text" id="Note" placeholder="Note gì cũng được :)">
+                </div>
+                <div>
+                    <br>
+                    <button onclick="format()"
+                        style="font-size: 30px; color: brown; background-color: rgb(236, 198, 141);">Up Date</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function showModal() {
+            $("#exampleModal").click(function () { $("p").show(); });
+        }
+        function format() {
+            let start_date = document.getElementById("startDate").value;
+            alert("Start Date : " + moment(start_date).format("DD/MM/YYYY"));
+            let end_date = document.getElementById("endDate").value;
+            alert("End Date : " + moment(end_date).add(5, "days").format("DD/MM/YYYY"));
+            let note = document.getElementById("Note").value;
+            alert("Note : " + note);
+        }
+    </script>
+</body>
+
+</html>
